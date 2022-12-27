@@ -1,0 +1,44 @@
+.container-navbar {
+    background-color: rgba(185, 223, 226, 60%) ;
+    
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.container {
+    margin: 10px;
+}
+
+.container-navbar a {
+    color: #39645B;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    margin: 15px;
+    padding: 0;
+}
+
+.navbar-expand {
+    justify-content: right ;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #39645B;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #EBE2D9 ;
+}
+
+h3 {
+    font-weight: 100;
+}
