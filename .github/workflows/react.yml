@@ -21,20 +21,18 @@ permissions:
 # Allow one concurrent deployment
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: true
 
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    steps:
+    steps:
       - name: Deploy React to GitHub Pages
-      # You may pin to the exact commit or the version.
-      # uses: bitovi/github-actions-react-to-ghp@1782b3410beca05fb72bd089e5620790c0c4d883
-      uses: bitovi/github-actions-react-to-ghp@v1.2.0
-      with:
-        # Specifies the path of the static assets after building
-        path: 'front/public'
+        uses: bitovi/github-actions-react-to-ghp@v1.2.0
+        with:
+          path: 'front/public'
 
