@@ -1,7 +1,4 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
-#
-# To get started with Next.js see: https://nextjs.org/docs/getting-started
-#
+
 name: Deploy React site to Pages
 
 on:
@@ -22,7 +19,6 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -31,21 +27,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: 'Build'
-        shell: bash
-        run: |
-          echo "::group::Build"
-          npm --prefix ./front ci ./front
-          ${{ inputs.build_command }}
-          echo "::endgroup::"
-      - name: 'upload'
-        uses: actions/upload-pages-artifact@v1.0.4
-        with: 
-          path: 'front/public'
-
-      - id: deploy
-        name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+      - name: Deploy React to GitHub Pages
+        uses: bitovi/github-actions-react-to-ghp@v1.2.0
         with:
-          token: ${{ github.token }}
+          path: 'front/public'
 
