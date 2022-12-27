@@ -34,10 +34,8 @@ jobs:
       - name: 'Build'
         shell: bash
         run: |
-          echo "cd to front"
-          ls -la
           echo "::group::Build"
-          npm ci
+          npm ci --prefix ./front
           ${{ inputs.build_command }}
           echo "::endgroup::"
       - name: 'upload'
