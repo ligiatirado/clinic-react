@@ -35,7 +35,7 @@ jobs:
         shell: bash
         run: |
           echo "cd to front"
-          cd front
+          ls -la
           echo "::group::Build"
           npm ci
           ${{ inputs.build_command }}
