@@ -31,8 +31,23 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy React to GitHub Pages
-        uses: bitovi/github-actions-react-to-ghp@v1.2.0
-        with:
+      - name: 'Build'
+        shell: bash
+        run: |
+          echo "cd to front"
+          cd front
+          echo "::group::Build"
+          npm ci
+          ${{ inputs.build_command }}
+          echo "::endgroup::"
+      - name: 'upload'
+        uses: actions/upload-pages-artifact@v1.0.4
+        with: 
           path: 'front/public'
+
+      - id: deploy
+        name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
+        with:
+          token: ${{ github.token }}
 
