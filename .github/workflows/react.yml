@@ -8,14 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
-=======
-    steps:
-      - name: Deploy React to GitHub Pages
-        uses: bitovi/github-actions-react-to-ghp@v1.2.0
-        with:
-          path: 'public'
->>>>>>> 4d43514370aa9ef3a69ae0774c03bbde0c29e299
 
     strategy:
       matrix:
