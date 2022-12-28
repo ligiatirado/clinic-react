@@ -1,5 +1,5 @@
 .container-navbar {
-    background-color: rgba(185, 223, 226, 60%) ;
+    background-color: rgba(185, 223, 226, 90%) ;
     
     position: absolute;
     width: 100%;
@@ -16,6 +16,8 @@
     color: #39645B;
     border-radius: 5px;
     margin: 0 2px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .navbar {
@@ -29,16 +31,24 @@
 }
 
 .navbar-expand {
-    justify-content: right ;
-}
+    justify-content: space-between;
+} 
 
 .nav-link:hover {
     color: white;
     background-color: #39645B;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px #EBE2D9 ;
+    box-shadow: 2px 2px 2px #bcece0 ;
 }
 
-h3 {
+h2 {
     font-weight: 100;
+    margin: 0 5px;
+}
+
+.logo-nav {
+    height: 100px;
+    width: 225px;
+    display: flex;
+    margin: 10px 10px 10px 20px;
 }

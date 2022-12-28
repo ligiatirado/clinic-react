@@ -1,3 +1,7 @@
 .carousel-img {
     max-height: 100vh;
 }
+
+.carousel-item {
+    transition: ease-out 1s;
+}
