@@ -1,0 +1,17 @@
+.card-container{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    background-color: rgba(198, 235, 197, 90%); 
+    
+}
+
+.card-item {
+    display: flex;
+    margin: 15px;
+    align-items: center ;
+    justify-content: center;
+}

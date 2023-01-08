@@ -1,0 +1,28 @@
+.title{
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #C6EBC5;
+    color: #3C6255;
+    border-color: #C6EBC5;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #A1C298;
+    display: flex;
+    margin: auto;
+}
+
+.btn:hover {
+    background-color: #3C6255;
+    color: white;
+    border-color: #3C6255;
+    box-shadow: 2px 2px 5px #A1C298;
+}
+
+.card {
+    border: 1px #3C6255;
+    box-shadow: 2px 2px 5px #A1C298;
+    display: flex;
+    margin: 15px;
+    justify-self: center;
+}

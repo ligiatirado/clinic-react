@@ -4,12 +4,16 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import NavegationBar from "./components/navbar/navbar";
 import MainContainer from "./components/main-container/MainContainer";
 
+
+
 function App() {
   return (
-    <div className="App">
-      <NavegationBar />
-      <MainContainer />
-    </div>
+    <>
+      <div className="App">
+        <NavegationBar />
+        <MainContainer />
+      </div>      
+    </>
   );
 }
 
