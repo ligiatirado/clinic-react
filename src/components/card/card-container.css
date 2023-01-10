@@ -9,7 +9,6 @@
         grid-column-gap: 15px;
         grid-row-gap: 30px;
         background-color: rgba(198, 235, 197, 90%); 
-        grid-auto-flow: row;
     }
     
     .card-item {
@@ -30,7 +29,6 @@
         grid-column-gap: 15px;
         grid-row-gap: 30px;
         background-color: rgba(198, 235, 197, 90%); 
-        grid-auto-flow: row;
     }
     
     .card-item {
@@ -45,13 +43,12 @@
 @media (max-width:580px) {
     .card-container{
         display: grid;
-        padding: 20px;
+        padding: 20px 40px;
         grid-template-columns: 100%;
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 15px;
         grid-row-gap: 30px;
         background-color: rgba(198, 235, 197, 90%); 
-        grid-auto-flow: row;
     }
     
     .card-item {
@@ -60,4 +57,14 @@
         align-items: center ;
         justify-content: center;  
     }    
-}
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+} 
+

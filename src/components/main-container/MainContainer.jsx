@@ -5,7 +5,7 @@ import "./mainContainer.css";
 export default function MainContainer() {
   return (
     <div>
-      <CarouselImages className="carousel" />
+      <CarouselImages />
       <h3>News</h3>
       <CardContainer />
     </div>

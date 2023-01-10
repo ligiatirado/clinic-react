@@ -1,8 +1,13 @@
-.carousel-img {
+.carousel .carousel-img{
+    background-color: #B9E2DE;
+    margin: 0;
+    min-width: 100%;
     max-height: 100vh;
-    max-width: 100%;
-}
+    display: flex;
+} 
+
 
 .carousel-item {
     transition: ease-out 1s;
+
 }

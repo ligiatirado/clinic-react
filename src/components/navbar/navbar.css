@@ -37,13 +37,42 @@
     color: white;
     background-color: #3C6255;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px #fbf2cf ;
+    box-shadow: 1px 1px 1px #A1C298 ;
+    
 }
 
 h2 {
     font-weight: 100;
     margin: 0 8px;
 }
+
+
+
+/* ######  MENU LATERAL #######*/
+.navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+}
+
+.offcanvas {
+    font-family: 'Lora';
+    background-color: #fbf2cf;
+}
+
+.offcanvas-body .nav-link {
+    padding-left: 5px;
+}
+
+.offcanvas-title {
+    text-decoration: none;
+    font-weight: 600;
+    color: #3C6255;
+}
+
+.offcanvas-title:hover {
+    color:#3C6255;
+}
+
 
 
 /* ###### MEDIA QUERIES ###### */
@@ -59,12 +88,16 @@ h2 {
 }
 
 /* Medium Screen */
-@media (max-width:581px) and (max-width:990px) {
-    img .logo-nav {
+@media (min-width:581px) and (max-width:990px) {
+    .logo-nav {
         height: 70px;
         width: 150px;
         display: flex;
         margin: 10px 10px 10px 20px;
+    }
+
+    .space {
+        display: none;
     }
 }
 
@@ -75,6 +108,10 @@ h2 {
         width: 100px;
         display: flex;
         margin: 10px 10px 10px 20px;
+    }
+
+    .space {
+        display: none;
     }
 }
 

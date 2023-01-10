@@ -16,7 +16,7 @@ function CarouselImages() {
 const getCarouselImageList = () => {
   return [banner1, banner2, banner3].map((image, index) => {
     return (
-      <Carousel.Item interval={2000} key={index}>
+      <Carousel.Item className="carousel" interval={2000} key={index}>
         <img className="d-block w-100 carousel-img" src={image} alt="" />
       </Carousel.Item>
     );

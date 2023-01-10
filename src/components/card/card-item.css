@@ -26,3 +26,8 @@
     justify-self: center;
 }
 
+@media (max-width:580px) {
+    .btn{
+        font-size: 14px;
+    }
+}
