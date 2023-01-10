@@ -45,9 +45,37 @@ h2 {
     margin: 0 8px;
 }
 
-.logo-nav {
-    height: 90px;
-    width: 200px;
-    display: flex;
-    margin: 10px 10px 10px 20px;
+
+/* ###### MEDIA QUERIES ###### */
+
+/* Large screen */
+@media (min-width:991px) {
+    .logo-nav {
+        height: 90px;
+        width: 200px;
+        display: flex;
+        margin: 10px 10px 10px 20px;
+    }
 }
+
+/* Medium Screen */
+@media (max-width:581px) and (max-width:990px) {
+    img .logo-nav {
+        height: 70px;
+        width: 150px;
+        display: flex;
+        margin: 10px 10px 10px 20px;
+    }
+}
+
+/* Small Screen */
+@media (max-width:580px) {
+    .logo-nav {
+        height: 45px;
+        width: 100px;
+        display: flex;
+        margin: 10px 10px 10px 20px;
+    }
+}
+
+

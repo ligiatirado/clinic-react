@@ -4,16 +4,10 @@ import "./mainContainer.css";
 
 export default function MainContainer() {
   return (
-    <div >
-      <CarouselImages className="body" />
-      <h1>News</h1>
+    <div>
+      <CarouselImages className="carousel" />
+      <h3>News</h3>
       <CardContainer />
     </div>
-
   );
 }
-
-
-
-
-

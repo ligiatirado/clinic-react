@@ -1,14 +1,24 @@
-.body {
+.carousel {
     background-color: #B9E2DE;
     margin: 0;
     width: 100%;
     height: calc(100vh - 71.59px);
+} 
+
+@media (min-width:581px) {
+    h3 {
+        margin: 30px;
+        color: #3C6255;
+        font-weight: bold;
+    }
+
 }
 
-h1 {
-    margin: 20px;
-    margin-left: 30px;
-    color: #3C6255;
-    font-weight: bold;
-    
+@media (max-width:580px){
+    h3 {
+        margin: 20px;
+        color: #3C6255;
+        font-weight: bold;
+    }
+   
 }
