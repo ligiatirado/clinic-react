@@ -4,9 +4,9 @@ import "./mainContainer.css";
 
 export default function MainContainer() {
   return (
-    <div>
+    <div className="main-container">
       <CarouselImages />
-      <h3>News</h3>
+      <h4>Let's talk about...</h4>
       <CardContainer />
     </div>
   );

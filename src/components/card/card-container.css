@@ -4,11 +4,12 @@
     .card-container{
         display: grid;
         padding: 30px;
-        grid-template-columns: 33.5% 33% 32.5%;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 15px;
+        grid-template-columns: repeat(4, 22%);
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
         grid-row-gap: 30px;
-        background-color: rgba(198, 235, 197, 90%); 
+        background-color: rgb(198, 235, 197); 
+        justify-content: center;
     }
     
     .card-item {
@@ -24,11 +25,12 @@
     .card-container{
         display: grid;
         padding: 30px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 15px;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 25px;
         grid-row-gap: 30px;
-        background-color: rgba(198, 235, 197, 90%); 
+        background-color: rgb(198, 235, 197); 
+        justify-content: center;
     }
     
     .card-item {
@@ -44,11 +46,12 @@
     .card-container{
         display: grid;
         padding: 20px 40px;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 15px;
         grid-row-gap: 30px;
-        background-color: rgba(198, 235, 197, 90%); 
+        background-color: rgb(198, 235, 197); 
+        justify-content: center;
     }
     
     .card-item {
