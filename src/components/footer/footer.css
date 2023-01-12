@@ -1,0 +1,33 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 50px;
+    column-gap: 15px;
+    justify-content: center;
+    background-color: #ffb8c4;
+}
+
+.content {
+    display: inline;
+    color: white;
+}
+
+h5 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+h6{
+    display: flex;
+    justify-content: center;
+    margin: 5px;  
+    font-size: 16px;
+}
+
+.contact {
+    margin: 10px;
+    font-weight: 600;
+}
