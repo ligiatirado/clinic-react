@@ -1,10 +1,15 @@
 .container-navbar {
-    background-color: rgba(198, 235, 197, 90%);    
+    background-color: rgba(224, 253, 245, 90%);   
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 5;
+    margin-top: 100px;
+}
+
+.container-fluid {
+    margin-top: 25px;
 }
 
 .container {
@@ -24,6 +29,10 @@
     padding: 0;
 }
 
+.mb-3 {
+    margin-bottom: 0;
+}
+
 .navbar-nav {
     margin: 15px;
     padding: 0;
@@ -38,7 +47,6 @@
     background-color: #3C6255;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #A1C298 ;
-    
 }
 
 h2 {
@@ -56,11 +64,12 @@ h2 {
 
 .offcanvas {
     font-family: 'Lora';
-    background-color: #fbf2cf;
+    background-color: #e0fdf5;   
 }
 
 .offcanvas-body .nav-link {
     padding-left: 5px;
+
 }
 
 .offcanvas-title {

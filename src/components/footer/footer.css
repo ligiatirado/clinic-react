@@ -4,7 +4,7 @@
     grid-template-rows: 1fr 50px;
     column-gap: 15px;
     justify-content: center;
-    background-color: #ffb8c4;
+    background-color: #1e676e;
 }
 
 .content {
@@ -30,4 +30,36 @@ h6{
 .contact {
     margin: 10px;
     font-weight: 600;
+}
+
+/* Medium Screen */
+@media (min-width:581px) and (max-width:990px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 20% 50% 20%;
+        grid-template-rows: auto;
+        column-gap: 15px;
+        justify-content: center;
+    }
+
+}
+
+
+/* Small Screen */
+@media (max-width:580px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        column-gap: 15px;
+        justify-content: center;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
 }

@@ -21,7 +21,7 @@
 
 .card {
     border: 1px #3C6255;
-    box-shadow: 2px 2px 5px #A1C298;
+    box-shadow: 1px 1px 5px #1e676e;
     display: flex;
     justify-self: center;
 }
