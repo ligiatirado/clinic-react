@@ -1,6 +1,23 @@
-.body {
-    background-color: #B9E2DE;
-    margin: 0;
-    width: 100%;
-    height: calc(100vh - 71.59px);
+.main-container {
+    background-color: #e0fdf5;
+}
+
+h4 {
+    color: #ea80b0;
+    font-weight: bold;
+}
+
+@media (min-width:581px) {
+    h4 {
+        margin: 30px 30px 0 30px;
+    }
+
+}
+
+@media (max-width:580px){
+    h4 {
+        margin: 20px 20px 0 20px;
+        font-size: 18px;
+    }
+   
 }
