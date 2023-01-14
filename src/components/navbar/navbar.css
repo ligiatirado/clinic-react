@@ -9,7 +9,7 @@
 }
 
 .container-fluid {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .container {
@@ -92,7 +92,7 @@ h2 {
         height: 90px;
         width: 200px;
         display: flex;
-        margin: 10px 10px 10px 20px;
+        margin: 10px 10px 0 20px;
     }
 }
 
@@ -102,7 +102,7 @@ h2 {
         height: 70px;
         width: 150px;
         display: flex;
-        margin: 10px 10px 10px 20px;
+        margin: 10px 10px 0 20px;
     }
 
     .space {
@@ -116,7 +116,7 @@ h2 {
         height: 45px;
         width: 100px;
         display: flex;
-        margin: 10px 10px 10px 20px;
+        margin: 10px 10px 0 20px;
     }
 
     .space {

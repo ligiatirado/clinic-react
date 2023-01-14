@@ -4,7 +4,7 @@
     font-weight: 600;
     display: flex;
     margin: 0;
-    min-height: 5vh;
+    /* min-height: 5vh; */
     align-items: center;
     z-index: 10;
     position: relative;
@@ -13,9 +13,10 @@
 .bi {
     margin: 0 5px 0 10px;
     padding: 1px;
+    font-size: 14px;
 }
 
-.bi-telephone-fill{
+.navsup-body .bi-telephone-fill{
     margin-left: auto;
 }    
 
@@ -38,6 +39,11 @@ h6 {
 @media (max-width:580px){
     h6 {
         font-size: 14px;
+    }
+
+    .bi {
+        font-size: 10px;
+        margin: 0 5 0 5px;
     }
    
 }
