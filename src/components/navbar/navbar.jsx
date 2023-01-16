@@ -3,11 +3,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./navbar.css";
 import logo from "../../assets/images/logo.png"
+import { NavLink } from 'react-router-dom';
 
 
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-function OffcanvasExample() {
+function NavegationBar() {
   return (
     <>
       {['lg'].map((expand) => (
@@ -23,16 +24,17 @@ function OffcanvasExample() {
               placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <a className="offcanvas-title" href="#home"> Belvedere GynoCare </a>
+                  {/* <a className="offcanvas-title" href="#home"> Belvedere GynoCare </a> */}
+                  <NavLink className="offcanvas-title" to="/">Belvedere GynoCare</NavLink>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Doctors</Nav.Link>
-                  <Nav.Link href="#action2">About Us</Nav.Link>
+                  <NavLink className="nav-link" to="/">Doctors</NavLink>
+                  <NavLink className="nav-link" to="/about">About Us</NavLink>
                   <h2 className="space"> | </h2>
-                  <Nav.Link href="#action3">Sign In</Nav.Link>
-                  <Nav.Link href="#action4">Sign Up</Nav.Link>
+                  <NavLink className="nav-link">Sign In</NavLink>
+                  <NavLink className="nav-link">Sign Up</NavLink>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -43,4 +45,4 @@ function OffcanvasExample() {
   );
 }
 
-export default OffcanvasExample;
+export default NavegationBar;

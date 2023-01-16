@@ -1,22 +1,21 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { Routes, Route } from 'react-router-dom';
+import Home from "./Pages/Home";
 import NavegationBar from "./components/navbar/navbar";
-import MainContainer from "./components/main-container/MainContainer";
-import Footer from "./components/footer/footer";
 import Navsup from "./components/navbar/Navsup";
+import About from "./Pages/About";
 
-
-
-function App() {
+const App = () => {
   return (
     <>
-      <div className="App">
-        <Navsup />
-        <NavegationBar />
-        <MainContainer />
-        <Footer />
-      </div>      
+      <Navsup />
+      <NavegationBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>      
     </>
   );
 }

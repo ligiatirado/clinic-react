@@ -3,8 +3,9 @@
 
 body {
   margin: 0;
-
+  background-color: #1e676e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --bs-body-bg: #1e676e;
 }
 
