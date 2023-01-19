@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import NavegationBar from "./components/navbar/navbar";
 import Navsup from "./components/navbar/Navsup";
 import About from "./Pages/About";
+import SigIn from "./Pages/SignIn";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/signin" element={<SigIn />} />
       </Routes>      
     </>
   );

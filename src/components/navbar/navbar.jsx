@@ -33,7 +33,7 @@ function NavegationBar() {
                   <NavLink className="nav-link" to="/">Doctors</NavLink>
                   <NavLink className="nav-link" to="/about">About Us</NavLink>
                   <h2 className="space"> | </h2>
-                  <NavLink className="nav-link">Sign In</NavLink>
+                  <NavLink className="nav-link" to="/signin">Sign In</NavLink>
                   <NavLink className="nav-link">Sign Up</NavLink>
                 </Nav>
               </Offcanvas.Body>

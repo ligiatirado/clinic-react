@@ -1,0 +1,31 @@
+* {
+    font-family: 'Lora', serif;
+}
+
+.container-login {
+    background-color: white;
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    padding: 25px;
+    border: 2px;
+    min-width: 20vw;
+}
+
+.label {
+    color: #ea80b0;
+    font-weight: 600;
+
+}
+
+.form-button {
+    background-color: #e0fdf5;
+    box-shadow: none;
+    margin-top: 30px;
+}
+

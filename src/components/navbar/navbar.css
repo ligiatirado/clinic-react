@@ -6,6 +6,7 @@
     left: 0;
     z-index: 5;
     margin-top: 100px;
+    box-shadow: 2px 1px 3px rgba(161, 194, 152, 80%) ;
 }
 
 .container-fluid {
