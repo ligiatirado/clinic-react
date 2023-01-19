@@ -8,7 +8,7 @@ import Form from "react-bootstrap/Form";
 function FormLogin() {
   return (
     <Container className="container-login">
-      <div className="content-container">
+      <div className="content-container-login">
         <Form>
           <Form.Group className="mb-3 label" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>

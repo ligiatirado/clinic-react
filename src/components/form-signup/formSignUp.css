@@ -1,0 +1,20 @@
+* {
+    font-family: 'Lora', serif;
+}
+
+.container-signup {
+    background-color: white;
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container-signup {
+    padding: 20px 25px 30px 25px;
+    border: 2px solid rgba(250, 177, 220, 70%);
+    box-shadow: 2px 2px 5px rgba(250, 177, 220, 70%);
+    min-width: 30vw;
+    border-radius: 8px;
+}

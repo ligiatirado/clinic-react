@@ -7,6 +7,7 @@ import NavegationBar from "./components/navbar/navbar";
 import Navsup from "./components/navbar/Navsup";
 import About from "./Pages/About";
 import SigIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<SigIn />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>      
     </>
   );

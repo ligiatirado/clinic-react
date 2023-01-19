@@ -11,21 +11,35 @@
     align-items: center;
 }
 
-.content-container {
-    padding: 25px;
-    border: 2px;
+.content-container-login {
+    padding: 50px 25px;
+    border: 2px solid rgba(250, 177, 220, 70%);
+    box-shadow: 2px 2px 5px rgba(250, 177, 220, 70%);
     min-width: 20vw;
+    border-radius: 8px;
 }
 
 .label {
     color: #ea80b0;
     font-weight: 600;
+}
 
+.input {
+    color: #808080;
 }
 
 .form-button {
-    background-color: #e0fdf5;
-    box-shadow: none;
-    margin-top: 30px;
+
+    background-color: rgba(250, 177, 220, 70%);
+    color: #ea80b0;
+    box-shadow: 1px 1px 3px #ea80b0;
+    margin-top: 50px;
+    border: #ea80b0;
 }
 
+.form-button:hover {
+    background-color: #ea80b0;
+    color: white;
+    box-shadow: 1px 1px 3px #ea80b0;
+    border: #ea80b0;
+}
