@@ -6,7 +6,7 @@
     background-color: white;
     display: flex;
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     justify-content: center;
     align-items: center;
 }

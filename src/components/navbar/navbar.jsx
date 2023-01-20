@@ -8,13 +8,13 @@ import { NavLink } from 'react-router-dom';
 
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-function NavegationBar() {
+function NavegationBar(props) {
   return (
     <>
       {['lg'].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3 container-navbar">
           <Container fluid>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               <img className="logo-nav" src={logo} alt="" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -24,18 +24,24 @@ function NavegationBar() {
               placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  {/* <a className="offcanvas-title" href="#home"> Belvedere GynoCare </a> */}
                   <NavLink className="offcanvas-title" to="/">Belvedere GynoCare</NavLink>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <NavLink className="nav-link" to="/">Doctors</NavLink>
-                  <NavLink className="nav-link" to="/about">About Us</NavLink>
-                  <h2 className="space"> | </h2>
-                  <NavLink className="nav-link" to="/signin">Sign In</NavLink>
-                  <NavLink className="nav-link" to="/signup">Sign Up</NavLink>
-                </Nav>
+                {
+                  !props.userLogado ?
+                      <Nav className="justify-content-end flex-grow-1 pe-3">
+                        <NavLink className="nav-link" to="/">Doctors</NavLink>
+                        <NavLink className="nav-link" to="/about">About Us</NavLink>
+                        <h2 className="space"> | </h2>
+                        <NavLink className="nav-link" to="/signin">Sign In</NavLink>
+                        <NavLink className="nav-link" to="/signup">Sign Up</NavLink>
+                      </Nav>
+                    :
+                    <div>
+                      {props.emailLogado}
+                    </div>
+                }
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

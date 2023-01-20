@@ -6,10 +6,10 @@ import FormLogin from "../components/form-login/FormLogin";
 
 
 
-function SigIn() {
+function SigIn(props) {
     return (
         <>
-        <FormLogin />
+        <FormLogin onLogin ={props.onLogin} />
         <Footer />
         </>
     );

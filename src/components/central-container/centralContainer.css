@@ -1,0 +1,7 @@
+.central-container{
+    display: flex;
+    /* min-height: 100vh; */
+    background-color: white;
+    /* z-index: 5; */
+    position:relative;
+}
